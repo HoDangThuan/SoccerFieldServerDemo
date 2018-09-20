@@ -9,10 +9,17 @@ namespace SoccerFieldServer.Core.Entities
         [StringLength(12)]
         public string Id { get; set; }
 
+        [Required]
+        [StringLength(50)]
         public string Name { get; set; }
+
         public int Amount { get; set; }
         public decimal Price { get; set; }
-        public Boolean Condition { get; set; }
+
+        [Required]
+        public Boolean Status { get; set; }
+
+        [StringLength(50)]
         public string Note { get; set; }
 
         [Required]

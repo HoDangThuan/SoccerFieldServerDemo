@@ -25,9 +25,17 @@ namespace SoccerFieldServer.api.Migrations
                         .ValueGeneratedOnAdd()
                         .HasMaxLength(6);
 
-                    b.Property<string>("Name");
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(50);
 
-                    b.Property<string>("PassWord");
+                    b.Property<string>("Note")
+                        .HasMaxLength(50);
+
+                    b.Property<string>("PassWord")
+                        .HasMaxLength(5);
+
+                    b.Property<bool>("Status");
 
                     b.HasKey("Id");
 
@@ -41,26 +49,27 @@ namespace SoccerFieldServer.api.Migrations
                         .HasMaxLength(12);
 
                     b.Property<string>("BillerId")
-                        .IsRequired()
                         .HasMaxLength(12);
 
                     b.Property<decimal>("BookFieldFee");
 
                     b.Property<decimal>("ChangeFee");
 
-                    b.Property<bool>("Condition");
-
                     b.Property<string>("CustomerId")
                         .IsRequired()
                         .HasMaxLength(12);
 
-                    b.Property<DateTime>("DayOfActionBookField");
+                    b.Property<DateTime>("DayOfActionBookField")
+                        .HasColumnType("date");
 
-                    b.Property<DateTime>("DayOfBill");
+                    b.Property<DateTime>("DayOfBill")
+                        .HasColumnType("date");
 
-                    b.Property<DateTime>("DayOfBookField");
+                    b.Property<DateTime>("DayOfBookField")
+                        .HasColumnType("date");
 
-                    b.Property<string>("Note");
+                    b.Property<string>("Note")
+                        .HasMaxLength(50);
 
                     b.Property<decimal>("ProductFee");
 
@@ -72,9 +81,11 @@ namespace SoccerFieldServer.api.Migrations
                         .IsRequired()
                         .HasMaxLength(12);
 
-                    b.Property<DateTime>("TimeEnd");
+                    b.Property<bool>("Status");
 
-                    b.Property<DateTime>("TimeStart");
+                    b.Property<TimeSpan>("TimeEnd");
+
+                    b.Property<TimeSpan>("TimeStart");
 
                     b.Property<decimal>("TotalFee");
 
@@ -99,19 +110,36 @@ namespace SoccerFieldServer.api.Migrations
                         .ValueGeneratedOnAdd()
                         .HasMaxLength(12);
 
-                    b.Property<string>("Address");
+                    b.Property<string>("Address")
+                        .IsRequired()
+                        .HasMaxLength(50);
 
-                    b.Property<string>("BankAcount");
+                    b.Property<string>("BankAcount")
+                        .IsRequired()
+                        .HasMaxLength(15);
 
-                    b.Property<DateTime>("DateOfBirth");
+                    b.Property<DateTime>("DateOfBirth")
+                        .HasColumnType("date");
 
-                    b.Property<string>("Email");
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasMaxLength(50);
 
-                    b.Property<string>("Name");
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(50);
 
-                    b.Property<string>("PassWord");
+                    b.Property<string>("Note")
+                        .HasMaxLength(50);
 
-                    b.Property<string>("PhoneNumber");
+                    b.Property<string>("PassWord")
+                        .HasMaxLength(5);
+
+                    b.Property<string>("PhoneNumber")
+                        .IsRequired()
+                        .HasMaxLength(11);
+
+                    b.Property<bool>("Status");
 
                     b.HasKey("Id");
 
@@ -168,23 +196,28 @@ namespace SoccerFieldServer.api.Migrations
                         .ValueGeneratedOnAdd()
                         .HasMaxLength(6);
 
-                    b.Property<string>("Address");
+                    b.Property<string>("Address")
+                        .IsRequired()
+                        .HasMaxLength(50);
 
-                    b.Property<DateTime>("CloseTime");
+                    b.Property<TimeSpan>("CloseTime");
 
-                    b.Property<bool>("Condition");
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(50);
 
-                    b.Property<string>("Name");
+                    b.Property<string>("Note")
+                        .HasMaxLength(50);
 
-                    b.Property<string>("Note");
-
-                    b.Property<DateTime>("OpenTime");
+                    b.Property<TimeSpan>("OpenTime");
 
                     b.Property<double>("PercentPunish");
 
                     b.Property<double>("PercentRushHour");
 
                     b.Property<double>("PercentVAT");
+
+                    b.Property<bool>("Status");
 
                     b.HasKey("Id");
 
@@ -199,17 +232,20 @@ namespace SoccerFieldServer.api.Migrations
 
                     b.Property<int>("Amount");
 
-                    b.Property<bool>("Condition");
-
                     b.Property<string>("GroupSoccerFieldId")
                         .IsRequired()
                         .HasMaxLength(6);
 
-                    b.Property<string>("Name");
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(50);
 
-                    b.Property<string>("Note");
+                    b.Property<string>("Note")
+                        .HasMaxLength(50);
 
                     b.Property<decimal>("Price");
+
+                    b.Property<bool>("Status");
 
                     b.HasKey("Id");
 
@@ -224,19 +260,20 @@ namespace SoccerFieldServer.api.Migrations
                         .ValueGeneratedOnAdd()
                         .HasMaxLength(12);
 
-                    b.Property<bool>("Condition");
-
                     b.Property<string>("GroupSoccerFieldId")
                         .IsRequired()
                         .HasMaxLength(6);
 
                     b.Property<int>("Kind");
 
-                    b.Property<string>("Note");
+                    b.Property<string>("Note")
+                        .HasMaxLength(50);
 
                     b.Property<decimal>("Price");
 
                     b.Property<int>("Size");
+
+                    b.Property<bool>("Status");
 
                     b.HasKey("Id");
 
@@ -251,25 +288,44 @@ namespace SoccerFieldServer.api.Migrations
                         .ValueGeneratedOnAdd()
                         .HasMaxLength(12);
 
-                    b.Property<string>("Address");
+                    b.Property<string>("Address")
+                        .IsRequired()
+                        .HasMaxLength(50);
 
-                    b.Property<string>("BankAcount");
+                    b.Property<string>("BankAcount")
+                        .IsRequired()
+                        .HasMaxLength(15);
 
-                    b.Property<DateTime>("DateOfBirth");
+                    b.Property<DateTime>("DateOfBirth")
+                        .HasColumnType("date");
 
-                    b.Property<string>("Email");
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasMaxLength(50);
 
                     b.Property<string>("GroupSoccerFieldId")
                         .IsRequired()
                         .HasMaxLength(6);
 
-                    b.Property<string>("Name");
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(50);
 
-                    b.Property<string>("PassWord");
+                    b.Property<string>("Note")
+                        .HasMaxLength(50);
 
-                    b.Property<string>("PhoneNumber");
+                    b.Property<string>("PassWord")
+                        .HasMaxLength(5);
 
-                    b.Property<string>("Regency");
+                    b.Property<string>("PhoneNumber")
+                        .IsRequired()
+                        .HasMaxLength(11);
+
+                    b.Property<string>("Position")
+                        .IsRequired()
+                        .HasMaxLength(50);
+
+                    b.Property<bool>("Status");
 
                     b.HasKey("Id");
 
@@ -283,13 +339,15 @@ namespace SoccerFieldServer.api.Migrations
                     b.Property<string>("StaffId")
                         .HasMaxLength(12);
 
-                    b.Property<DateTime>("Day");
+                    b.Property<DateTime>("Day")
+                        .HasColumnType("date");
 
                     b.Property<int>("Shift");
 
-                    b.Property<bool>("Condition");
+                    b.Property<string>("Note")
+                        .HasMaxLength(50);
 
-                    b.Property<string>("Note");
+                    b.Property<bool>("Status");
 
                     b.HasKey("StaffId", "Day", "Shift");
 
@@ -302,8 +360,7 @@ namespace SoccerFieldServer.api.Migrations
                 {
                     b.HasOne("SoccerFieldServer.Core.Entities.Staff", "Biller")
                         .WithMany()
-                        .HasForeignKey("BillerId")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .HasForeignKey("BillerId");
 
                     b.HasOne("SoccerFieldServer.Core.Entities.Customer", "Customer")
                         .WithMany()

@@ -7,6 +7,11 @@ namespace SoccerFieldServer.Infrastructure.Data
     {
         public SoccerFieldServerContext(DbContextOptions<SoccerFieldServerContext> options) : base(options)
         { }
+
+        public SoccerFieldServerContext()
+        {
+        }
+
         protected override void OnModelCreating(ModelBuilder builder)
         {
             builder.Entity<DetailsOfBookField>().HasKey(table => new {

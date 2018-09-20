@@ -6,13 +6,15 @@ namespace SoccerFieldServer.Core.Entities
 {
     public class CustomerHistory
     {
-        [Key, Column(Order = 0)]
+        [Key]
+        [Column(Order = 0)]
         [StringLength(12)]
         //Foreign key for Customer
         public string CustomerId { get; set; }
         public Customer Customer { get; set; }
 
-        [Key, Column(Order = 1)]
+        [Key]
+        [Column(Order = 1)]
         [StringLength(12)]
         //Foreign key for BookField
         public string BookFieldId { get; set; }

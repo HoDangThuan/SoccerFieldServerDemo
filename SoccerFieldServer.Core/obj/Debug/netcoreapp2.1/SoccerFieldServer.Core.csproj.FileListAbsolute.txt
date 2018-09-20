@@ -6,4 +6,3 @@ C:\Users\hdthuan\Downloads\Demo HDThuan\SoccerFieldServer-api-master\SoccerField
 C:\Users\hdthuan\Downloads\Demo HDThuan\SoccerFieldServer-api-master\SoccerFieldServer.Core\obj\Debug\netcoreapp2.1\SoccerFieldServer.Core.AssemblyInfo.cs
 C:\Users\hdthuan\Downloads\Demo HDThuan\SoccerFieldServer-api-master\SoccerFieldServer.Core\obj\Debug\netcoreapp2.1\SoccerFieldServer.Core.dll
 C:\Users\hdthuan\Downloads\Demo HDThuan\SoccerFieldServer-api-master\SoccerFieldServer.Core\obj\Debug\netcoreapp2.1\SoccerFieldServer.Core.pdb
-C:\Users\hdthuan\Downloads\Demo HDThuan\SoccerFieldServer-api-master\SoccerFieldServer.Core\obj\Debug\netcoreapp2.1\SoccerFieldServer.Core.csprojAssemblyReference.cache

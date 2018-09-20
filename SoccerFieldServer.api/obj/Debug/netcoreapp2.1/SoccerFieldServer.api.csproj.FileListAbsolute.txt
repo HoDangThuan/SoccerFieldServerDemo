@@ -34,3 +34,8 @@ C:\Users\hdthuan\Downloads\Demo HDThuan\SoccerFieldServer-api-master\SoccerField
 C:\Users\hdthuan\Downloads\Demo HDThuan\SoccerFieldServer-api-master\SoccerFieldServer.api\obj\Debug\netcoreapp2.1\SoccerFieldServer.api.Views.pdb
 C:\Users\hdthuan\Downloads\Demo HDThuan\SoccerFieldServer-api-master\SoccerFieldServer.api\obj\Debug\netcoreapp2.1\SoccerFieldServer.api.dll
 C:\Users\hdthuan\Downloads\Demo HDThuan\SoccerFieldServer-api-master\SoccerFieldServer.api\obj\Debug\netcoreapp2.1\SoccerFieldServer.api.pdb
+C:\Users\hdthuan\Downloads\Demo HDThuan\SoccerFieldServer-api-master\SoccerFieldServer.api\obj\Debug\netcoreapp2.1\Razor\Views\GroupSoccerFields\Create.g.cshtml.cs
+C:\Users\hdthuan\Downloads\Demo HDThuan\SoccerFieldServer-api-master\SoccerFieldServer.api\obj\Debug\netcoreapp2.1\Razor\Views\GroupSoccerFields\Delete.g.cshtml.cs
+C:\Users\hdthuan\Downloads\Demo HDThuan\SoccerFieldServer-api-master\SoccerFieldServer.api\obj\Debug\netcoreapp2.1\Razor\Views\GroupSoccerFields\Details.g.cshtml.cs
+C:\Users\hdthuan\Downloads\Demo HDThuan\SoccerFieldServer-api-master\SoccerFieldServer.api\obj\Debug\netcoreapp2.1\Razor\Views\GroupSoccerFields\Edit.g.cshtml.cs
+C:\Users\hdthuan\Downloads\Demo HDThuan\SoccerFieldServer-api-master\SoccerFieldServer.api\obj\Debug\netcoreapp2.1\Razor\Views\GroupSoccerFields\Index.g.cshtml.cs

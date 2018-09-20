@@ -6,12 +6,14 @@ namespace SoccerFieldServer.Core.Entities
 {
     public class DetailsOfBookField
     {
-        [Key, Column(Order = 0)]
+        [Key]
+        [Column(Order = 0)]
         [StringLength(12)]
         public string BookFieldId { get; set; }
         public BookField BookField { get; set; }
 
-        [Key, Column(Order = 1)]
+        [Key]
+        [Column(Order = 1)]
         [StringLength(12)]
         public string ProductId { get; set; }
         public Product Product { get; set; }
